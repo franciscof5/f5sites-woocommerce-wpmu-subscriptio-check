@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WooCommerce WPMU Subscriptio Check
  * Plugin URI: https://www.f5sites.com/woocommerce-wpmu-subscriptio-check
- * Description: Check if a WPMU subsite has a subscription related, for fastening and automated subsite creation by front-end user. Compatible with another F5 Sites WP Plugin -> Shared WordPress Posts And Taxonomies + Uploads Folder
+ * Description: Integrates WooCommerce Subscriptio (the cheaper one) with WPMU, checking and associating a SUBSCRIPTION (wp post object) when creating a new WPMU site in network, for fastening and automated subsite creation by front-end user. Compatible with another F5 Sites WP Plugin -> Shared WordPress Posts And Taxonomies + Uploads Folder
  * Version: 0.1
  * Author: Francisco Matelli Matulovic
  * Author URI: https://www.franciscomat.com
@@ -43,6 +43,7 @@ function listSubscriptios($subsID) {
 	//switch_to_blog(1);
 	$args = array(
 		"post_type"=>"subscription",
+		"author" => get_current_user_id(),
 		//"meta_key"=>"price",
 		//"orderby"=>"meta_value",
 		//"orderby"=>"title",
