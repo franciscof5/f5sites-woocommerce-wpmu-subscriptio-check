@@ -85,7 +85,7 @@ function teamTypeSelect($defaultValue) {
 	<h2>Type of team</h2>
 	<p>You can choose the type of your team to compete in ranking, it does not affect the cost.</p>
 	<?php
-	$teamTypesArray = array("Small Office", "Freelancer", "Startup", "Corporation", "Educational Institute"); 
+	$teamTypesArray = array("Small Office", "Freelancer", "Startup", "Corporation", "Educational Institute", "Study Group"); 
 	//
 	echo '<select name="teamType">';
 	foreach ($teamTypesArray as $type) {
