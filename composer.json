@@ -14,8 +14,4 @@
     		"composer/installers": "~1.0",
 	        "php": ">=5.2.4"
         }
-        	{
-			"type": "git",
-			"url": "git@bitbucket.org:f5sites/composer-wp-uploads.git"
-		},
 }
